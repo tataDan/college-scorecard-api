@@ -16,11 +16,11 @@ This application has been tested on Windows, the web, and Linux.  (It runs on a 
 
 To run or build this application you will first need to obtain a API key.  Go [here](https://collegescorecard.ed.gov/data/api-documentation/) and scroll down to the "API Access and Authentication" section and check the "I'm not a robot" checkbox. Then enter the requested information and click on the "Sign Up" button.
 
-To run the application you can use the `flutter run` command specifying the device like so: `flutter run -d windows dart-define=COLLEGE_SCORECARD_API_KEY=YOUR API KEY GOES HERE`, replacing "YOUR API KEY GOES HERE" with your API key.
+To run the application you can use the `flutter run` command specifying the device like so: `flutter run -d windows --dart-define=COLLEGE_SCORECARD_API_KEY=YOUR API KEY GOES HERE`, replacing "YOUR API KEY GOES HERE" with your API key.
 
-To run and build the application in release mode you can enter a command such as this: `flutter run -d windows --release dart-define=COLLEGE_SCORECARD_API_KEY=YOUR API KEY GOES HERE`, replacing "YOUR API KEY GOES HERE" with your API key.`.
+To run and build the application in release mode you can enter a command such as this: `flutter run -d windows --release --dart-define=COLLEGE_SCORECARD_API_KEY=YOUR API KEY GOES HERE`, replacing "YOUR API KEY GOES HERE" with your API key.`.
 
-To build the application in release mode you can enter a command such as this: `flutter build windows dart-define=COLLEGE_SCORECARD_API_KEY=YOUR API KEY GOES HERE`, replacing "YOUR KEY API GOES HERE" with your API key.
+To build the application in release mode you can enter a command such as this: `flutter build windows --dart-define=COLLEGE_SCORECARD_API_KEY=YOUR API KEY GOES HERE`, replacing "YOUR KEY API GOES HERE" with your API key.
 
 If you are using Visual Studio Code and you want to use the <F5> key ("Start Debugging") or the the <Ctl><F5> key combination ("Run without Debugging), then you can create a .vscode folder and place a "launch.json" file into that folder.  This file should like similar to this: `{
     "version": "0.1.0",
